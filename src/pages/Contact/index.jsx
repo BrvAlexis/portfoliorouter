@@ -2,7 +2,7 @@ const Contact = () => {
 	return (
 		<div className="container mt-5">
 		  <h1>Contact</h1>
-		  <p>Vous souhaitez discuter avec moi, que ce soit pour me proposer un poste ou pour passer le temps pendant ce confinement ? Remplissez le formulaire ci-dessous, je vous contacterai dès que je le peux.</p>
+		  <p>Vous souhaitez discuter avec moi ou pour une opportunité de poste ? Remplissez le formulaire ci-dessous, je vous contacterai dès que je le peux.</p>
 		  
 		  <form>
 			<div className="mb-3">

@@ -3,24 +3,39 @@ import React from 'react';
 
 function Footer() {
     return (
-        <footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div className="col-md-4 d-flex align-items-center">
-                
-                <Link to="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                <img src="/files/favicon.png" alt="MonApp" style={{ maxWidth: '30px', maxHeight: '30px', marginRight: '10px' }} />
-                </Link>
-                <span className="mb-3 mb-md-0 text-muted">© 2024 Company, Inc</span>
+        <footer className="py-6 my-6 border-top">
+        <div className="container">
+          <div className="row justify-content-center text-center">
+            <div className="col-12">
+              <h4>Follow Me</h4>
             </div>
-
-            <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li className="ms-3"> 
-                    <Link className="text-muted" to="//github.com/BrvAlexis" target="_blank">
-                        <i className="bi bi-github" style={{ fontSize: '1.5rem' }}></i>
-                    </Link>
+            <div className="col-12">
+              <ul className="nav list-unstyled d-flex justify-content-center">
+                <li className="ms-3">
+                  <Link className="text-muted" to="//github.com/BrvAlexis" target="_blank">
+                    <i className="bi bi-github" style={{ fontSize: '1.5rem' }}></i>
+                  </Link>
                 </li>
-                
-            </ul>
-        </footer>
+                <li className="ms-3">
+                  <Link className="text-muted" to="//www.linkedin.com/in/alexbrv-31devweb" target="_blank">
+                    <i className="bi bi-linkedin" style={{ fontSize: '1.5rem' }}></i>
+                  </Link>
+                </li>
+                <li className="ms-3">
+                  <Link className="text-muted" to="//twitter.com/yourusername" target="_blank">
+                    <i className="bi bi-twitter" style={{ fontSize: '1.5rem' }}></i>
+                  </Link>
+                </li>
+                <li className="ms-3">
+                  <Link className="text-muted" to="//www.youtube.com/c/yourchannelname" target="_blank">
+                    <i className="bi bi-youtube" style={{ fontSize: '1.5rem' }}></i>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     );
 }
 
