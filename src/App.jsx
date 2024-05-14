@@ -18,6 +18,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 function App() {
   
@@ -26,7 +27,7 @@ function App() {
     <ThemeProvider>
     <BrowserRouter>
      <Navbar />
-     <main className="px-3">
+     <main className="mt-3">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
