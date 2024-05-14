@@ -1,3 +1,5 @@
+import './App.css'
+import './context/theme.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -7,7 +9,8 @@ import Exercices from './pages/Works/Exercices';
 import EtudeDeCas from './pages/Works/Etudedecas';
 import ProjetsConcrets from './pages/Works/Projetsconcrets';
 import Navbar from './components/Navbar';
-import './App.css'
+import { ThemeProvider } from './context/ThemeContext';
+
 import {
   BrowserRouter,
   Routes,
@@ -18,6 +21,7 @@ function App() {
   
 
   return (
+    <ThemeProvider>
     <BrowserRouter>
      <Navbar />
      <div className="container">
@@ -32,6 +36,7 @@ function App() {
         </Routes>
       </div>
     </BrowserRouter>
+    </ThemeProvider>
    
   )
 }

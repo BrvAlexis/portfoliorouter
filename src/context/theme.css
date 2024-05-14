@@ -1,0 +1,43 @@
+:root {
+    /* Définition des variables pour le thème jour */
+    --background-color-day: #ffffff; /* Couleur de fond pour le thème jour */
+    --text-color-day: #000000; /* Couleur de texte pour le thème jour */
+  
+    /* Définition des variables pour le thème nuit */
+    --background-color-night: #343a40; /* Couleur de fond pour le thème nuit */
+    --text-color-night: #ffffff; /* Couleur de texte pour le thème nuit */
+  }
+  
+  /* Styles par défaut (thème jour) */
+  body.theme-light {
+    background-color: var(--background-color-day);
+    color: var(--text-color-day);
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition douce pour le changement de thème */
+  }
+  /* Styles pour le thème nuit */
+  body.theme-dark {
+    background-color: var(--background-color-night);
+    color: var(--text-color-night);
+  }
+  
+  /* Autres éléments que vous souhaitez styliser en fonction du thème */
+  button {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Bouton pour le thème jour */
+  button.theme-light {
+    background-color: var(--text-color-day);
+    color: var(--background-color-day);
+  }
+  
+  /* Bouton pour le thème nuit */
+  button.theme-dark {
+    background-color: var(--text-color-night);
+    color: var(--background-color-night);
+  }
+
+ 
