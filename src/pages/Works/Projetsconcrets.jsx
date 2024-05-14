@@ -16,7 +16,7 @@ function Card({ title, image, text }) {
   );
 }
 
-function Projetsconcrets() {
+function Projetsconcrets({ showHeader }) {
   const projects = [
     {
       title: "My grandparent bridge club website",
@@ -37,8 +37,12 @@ function Projetsconcrets() {
   return (
     <div className="container">
     <div className="row">
+    {showHeader && (
+          <>
       <h3>Liste des travaux :</h3>
       <p>Vous pourrez trouver ci-dessous la liste de mes projets. J'en ai réalisé certains lors de ma formation chez The Hacking Project, et d'autres sont des projets personnels.</p>
+      </>
+      )}
       {projects.map((project, index) => (
         <Card key={index} title={project.title} image={project.image} text={project.text} />
       ))}
