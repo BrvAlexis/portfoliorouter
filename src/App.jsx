@@ -1,6 +1,7 @@
 import './App.css'
 import './context/theme.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -9,6 +10,7 @@ import Exercices from './pages/Works/Exercices';
 import EtudeDeCas from './pages/Works/Etudedecas';
 import ProjetsConcrets from './pages/Works/Projetsconcrets';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import { ThemeProvider } from './context/ThemeContext';
 
 import {
@@ -24,7 +26,7 @@ function App() {
     <ThemeProvider>
     <BrowserRouter>
      <Navbar />
-     <div className="container">
+     <main className="px-3">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -34,7 +36,9 @@ function App() {
           <Route path="/works/etudedecas" element={<EtudeDeCas />} />
           <Route path="/works/projetsconcrets" element={<ProjetsConcrets />} />
         </Routes>
-      </div>
+        
+      </main>
+      <Footer />
     </BrowserRouter>
     </ThemeProvider>
    

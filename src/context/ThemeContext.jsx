@@ -9,14 +9,13 @@ export const useTheme = () => useContext(ThemeContext);
 
 // Provider du thème qui gère l'état du thème
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState('light'); // 'light' pour jour et 'dark' pour nuit
+  const [theme, setTheme] = useState('light'); 
 
   useEffect(() => {
     // Appliquer la classe de thème à l'élément body
     document.body.className = `theme-${theme}`;
   }, [theme]);
  
-
   // Fonction pour basculer entre les thèmes jour et nuit
   const toggleTheme = () => {
     console.log('Changement de thème');
